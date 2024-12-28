@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Propina para Belén</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="main-container">
+    <div class="card">
+      <!-- Ícono -->
+      <div class="icon">🤝</div>
+
+      <!-- Título -->
+      <h1 class="title">¡Gracias por Confiar en BarTv!</h1>
+
+      <!-- Descripción -->
+      <p class="description">
+        Belén cuida de tus niños con dedicación mientras disfrutas tu comida.
+        Si deseas agradecer su labor, puedes dejar una propina.
+      </p>
+
+      <!-- Datos de la cuenta -->
+      <div class="account-info">
+        <p>MiDinero Nº Cuenta:</p>
+        <strong>3701553248</strong>
+        <strong>Milagros María Belén Guales Romano</strong>
+        <p>Banco: MiDinero</p>
+      </div>
+
+      <!-- Botón -->
+      <button onclick="copyToClipboard()">Copiar Nº Cuenta</button>
+
+      <!-- Mensaje Final -->
+      <p class="thank-you-message">¡Tu contribución es muy apreciada!</p>
+    </div>
+  </main>
+
+  <!-- Script para copiar el número de cuenta -->
+  <script>
+    function copyToClipboard() {
+      navigator.clipboard.writeText("3701553248");
+      alert("¡Número de cuenta copiado!");
+    }
+  </script>
+</body>
+</html>
