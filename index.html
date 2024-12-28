@@ -51,6 +51,12 @@
     function copyToClipboard() {
       navigator.clipboard.writeText("3701553248");
       alert("¡Número de cuenta copiado!");
+      // Enviar un evento a Google Analytics
+    gtag('event', 'clic_copiar', {
+      'event_category': 'Interacción',
+      'event_label': 'Botón Copiar',
+      'value': 1
+    });
     }
   </script>
 </body>
